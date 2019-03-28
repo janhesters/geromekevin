@@ -23,7 +23,8 @@ function Bio() {
               style={{
                 marginRight: rhythm(1 / 2),
                 marginBottom: 0,
-                minWidth: 50,
+                width: rhythm(2),
+                height: rhythm(2),
                 borderRadius: `100%`,
               }}
               imgStyle={{
@@ -31,12 +32,10 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives and works in San
-              Francisco building useful things.
-              {` `}
-              <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
-              </a>
+              Personal blog by{" "}
+              <a href={`https://twitter.com/${social.twitter}`}>Jan Hesters</a>.
+              <br />
+              Ask better questions.
             </p>
           </div>
         )
