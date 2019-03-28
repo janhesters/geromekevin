@@ -5,7 +5,7 @@ module.exports = {
     description: `Personal blog by Jan Hesters. Ask better questions.`,
     siteUrl: `https://geromekevin.com/`,
     social: {
-      twitter: `geromekevin`,
+      twitter: `@geromekevin`,
     },
   },
   plugins: [
