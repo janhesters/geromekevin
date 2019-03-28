@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "geromekevin",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "Personal blog by Jan Hesters. Ask better questions.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Jan Hesters",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/janhesters/geromekevin/issues"
   },
   "dependencies": {
     "gatsby": "^2.3.3",
@@ -38,15 +38,18 @@
   "devDependencies": {
     "prettier": "^1.16.4"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://geromekevin.com",
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "geromekevin",
+    "react",
+    "blog"
   ],
   "license": "MIT",
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/janhesters/geromekevin"
   },
   "scripts": {
     "build": "gatsby build",
