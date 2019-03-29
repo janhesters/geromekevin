@@ -11,9 +11,6 @@ class Footer extends React.Component {
           paddingTop: rhythm(1),
         }}
       >
-        <div style={{ float: "right" }}>
-          © {new Date().getFullYear()}, Jan Hesters
-        </div>
         <a
           href="https://mobile.twitter.com/geromekevin"
           target="_blank"

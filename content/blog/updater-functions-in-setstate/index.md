@@ -16,6 +16,7 @@ this.setState({ on: !this.state.on });
 this.setState(prevState => ({ ...prevState, on: !prevState.on }));
 // , or
 this.setState(({ on }) => ({ on: !on }));
+// 🤔
 ```
 
 ---
@@ -76,7 +77,7 @@ this.setState(({ on }) => ({ on: !on }));
 
 **What is the different between these two?** I experimented with both, and I couldn’t discover a difference.
 
-It turns out it comes down to the inner workings of React¹. [**`setState` calls**](https://github.com/facebook/react/blob/master/packages/react/src/ReactBaseClasses.js#L66) another function called [**`enqueueSetState`**](https://github.com/facebook/react/blob/144328fe81719e916b946e22660479e31561bb0b/packages/react-test-renderer/src/ReactShallowRenderer.js#L62).
+It turns out it comes down to the inner workings of React. [**`setState` calls**](https://github.com/facebook/react/blob/master/packages/react/src/ReactBaseClasses.js#L66) another function called [**`enqueueSetState`**](https://github.com/facebook/react/blob/144328fe81719e916b946e22660479e31561bb0b/packages/react-test-renderer/src/ReactShallowRenderer.js#L62).
 
 ```js
 // In react/src/ReactBaseClasses.js
