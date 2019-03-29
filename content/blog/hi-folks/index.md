@@ -1,6 +1,6 @@
 ---
 title: New Beginnings
-date: "2015-05-28T22:40:32.169Z"
+date: '2015-05-28T22:40:32.169Z'
 description: This is a custom description for SEO and Open Graph purposes, rather than the default generated excerpt. Simply add a description field to the frontmatter.
 ---
 
@@ -9,15 +9,31 @@ Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
 right at the coast of the Semantics, a large language ocean. A small river named
 Duden flows by their place and supplies it with the necessary regelialia.
 
-```js
-function test() {
-  if (false) {
-    // This code is never reached.
-  } else {
-    return {
-      body: "Test function",
-      count: 2,
-    }
+```jsx
+function swag(props) {
+  return 'hello';
+}
+
+const filter = () => ['one', 1];
+
+function Button({ color, children }) {
+  return (
+    // ✅ `color` is always fresh!
+    <button className={'Button-' + color}>{children}</button>
+  );
+}
+
+class Button extends React.Component {
+  state = {
+    color: this.props.color,
+  };
+  render() {
+    const { color } = this.state; // 🔴 `color` is stale!
+    return (
+      <button className={'Button-' + color}>
+        {this.props.children}
+      </button>
+    );
   }
 }
 ```
