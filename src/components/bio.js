@@ -33,7 +33,10 @@ function Bio() {
             />
             <p>
               Personal blog by{" "}
-              <a href={`https://twitter.com/${social.twitter}`}>Jan Hesters</a>.
+              <a href={`https://twitter.com/${social.twitter}`}>
+                Jan Hesters
+              </a>
+              .
               <br />
               Ask better questions.
             </p>
