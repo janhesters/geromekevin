@@ -1,19 +1,31 @@
 body {
   --blue: rgb(130, 170, 255);
-
-  --header: var(--blue);
-  --inlineCode-bg: rgba(130, 170, 255, 0.2);
-  --inlineCode-text: #1a1a1a;
-  --primary-bg: #ffffff;
-  --primary-textNormal: #000000;
-  --primary-textTitle: #000000;
-  --primary-textLink: #7599e5;
-  --secondary-bg: rgb(249, 250, 251);
-  --secondary-textNormal: #000000;
-  --secondary-textTitle: #000000;
-  --secondary-textLink: #7599e5;
+  background-color: var(--bg);
 }
 
+body.light {
+  --bg: #ffffff;
+  --header: var(--pink);
+  --textNormal: #222;
+  --textTitle: #222;
+  --textLink: #7599e5;
+  --hr: hsla(0, 0%, 0%, 0.2);
+  --inlineCode-bg: rgba(130, 170, 255, 0.2);
+  --inlineCode-text: #1a1a1a;
+}
+
+body.dark {
+  -webkit-font-smoothing: antialiased;
+
+  --bg: #282c35;
+  --header: #ffffff;
+  --textNormal: rgba(255, 255, 255, 0.88);
+  --textTitle: #ffffff;
+  --textLink: var(--pink);
+  --hr: hsla(0, 0%, 100%, 0.2);
+  --inlineCode-bg: rgba(130, 170, 255, 0.2);
+  --inlineCode-text: #e6e6e6;
+}
 code[class*='language-'],
 pre[class*='language-'] {
   color: white;
@@ -161,8 +173,4 @@ pre[data-line] {
 .gatsby-highlight pre[class*='language-'] {
   float: left;
   min-width: 100%;
-}
-
-a {
-  color: var(--primary-textLink);
 }
