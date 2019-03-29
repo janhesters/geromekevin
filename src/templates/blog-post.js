@@ -4,10 +4,14 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/Bio"
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
+import SignUp from "../components/SignUp"
 import { rhythm, scale } from "../utils/typography"
 import { primaryColor } from "../style"
 import { formatReadingTime } from "../utils/helpers"
 
+const systemFont = `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif`
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
@@ -46,6 +50,14 @@ class BlogPostTemplate extends React.Component {
               marginBottom: rhythm(1),
             }}
           />
+          <div
+            style={{
+              margin: "90px 0 40px 0",
+              fontFamily: systemFont,
+            }}
+          >
+            <SignUp />
+          </div>
           <h3
             style={{
               fontFamily: "Montserrat, sans-serif",

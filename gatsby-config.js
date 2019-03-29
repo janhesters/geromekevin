@@ -74,5 +74,12 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    {
+      resolve: "gatsby-plugin-mailchimp",
+      options: {
+        endpoint:
+          "https://rwth-aachen.us20.list-manage.com/subscribe/post?u=c28fe8ebd02bbf5db01d87545&amp;id=60610b70a0", // see instructions section below
+      },
+    },
   ],
 }

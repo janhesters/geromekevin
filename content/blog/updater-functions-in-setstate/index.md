@@ -21,7 +21,7 @@ this.setState(({ on }) => ({ on: !on }));
 
 ---
 
-I learned (and I'm still learning) React using video lectures. In most courses on React I watched the instructor updating state like this:
+I learned (and I'm still learning) React using video lectures. In most courses about React I watched the instructor updating state like this:
 
 ```jsx
 import React, { Component } from 'react';
