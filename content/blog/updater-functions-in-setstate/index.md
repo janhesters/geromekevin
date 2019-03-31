@@ -59,7 +59,7 @@ const rootElement = document.getElementById('root');
 ReactDOM.render(<StateExample />, rootElement);
 ```
 
-Notice how `setState` gets an object as its parameter. This is okay for most state. However, in this example the next value of `this.state.on` depends on the current value of `this.state.on`.
+You can copy and paste this code to [CodeSandBox](https://codesandbox.io/). Notice how `setState` gets an object as its parameter. This is okay for most state. However, in this example the next value of `this.state.on` depends on the current value of `this.state.on`.
 
 The [recommended way](https://twitter.com/dan_abramov/status/816394376817635329) of updating `state` in React based on previous state is using updater functions instead of objects. I first read this in [“Using a function in setState instead of an object”](https://medium.com/@wisecobbler/using-a-function-in-setstate-instead-of-an-object-1f5cfd6e55d1) by [Sophia](https://medium.com/@wisecobbler), which is a great article 👏🏻.
 
