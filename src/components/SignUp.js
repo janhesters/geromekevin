@@ -1,7 +1,7 @@
 import React from "react"
 import addToMailchimp from "gatsby-plugin-mailchimp"
 
-import "./Signup.css"
+import "./SignUp.css"
 
 class SignUp extends React.Component {
   state = {
