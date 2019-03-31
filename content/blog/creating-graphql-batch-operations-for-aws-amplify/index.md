@@ -275,7 +275,7 @@ As you can see **we neatly separated the processed from the unprocessed todos in
 
 After running `amplify push` again, let's use the new mutation in our app.
 
-```js
+```jsx
 import './App.css';
 
 import API, { graphqlOperation } from '@aws-amplify/api';
