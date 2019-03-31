@@ -45,11 +45,6 @@ class BlogPostTemplate extends React.Component {
           </article>
         </main>
         <footer>
-          <hr
-            style={{
-              marginBottom: rhythm(1),
-            }}
-          />
           <div
             style={{
               margin: "90px 0 40px 0",
