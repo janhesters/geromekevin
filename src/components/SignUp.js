@@ -3,7 +3,7 @@ import addToMailchimp from "gatsby-plugin-mailchimp"
 
 import "./Signup.css"
 
-class Signup extends React.Component {
+class SignUp extends React.Component {
   state = {
     emailAddress: "",
     firstName: "",
@@ -201,4 +201,4 @@ class Signup extends React.Component {
   }
 }
 
-export default Signup
+export default SignUp
