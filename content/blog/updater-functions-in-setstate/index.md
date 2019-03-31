@@ -151,4 +151,4 @@ this.setState(({ nested }) = ({ nested: { ...nested, on: !on } }));
 
 Here we keep our light bulb hanging from the ceiling by destructuring and spreading out the nested key.
 
-I hope you either always avoided this stupid mistake or you learned as much as I did here 🎓.
+I hope you learned something interesting here today 🎓.

@@ -65,7 +65,7 @@ class Signup extends React.Component {
               style={{ color: "rgb(104, 104, 104)" }}
             >
               <p>
-                Subscribe to be notified about my latest articles via
+                Subscribe to be notified about my latest articles by
                 email.
               </p>
               <p>It's free.</p>
