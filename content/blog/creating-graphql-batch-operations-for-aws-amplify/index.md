@@ -315,16 +315,16 @@ const todoFixtures = [
 function App() {
   const [todos, setTodos] = useState([]);
 
-  async function fetchTodos() {
-    try {
-      const todoData = await API.graphql(graphqlOperation(listTodos));
-      setTodos(todoData.data.listTodos.items);
-    } catch (err) {
-      console.log('error: ', err);
-    }
-  }
-
   useEffect(() => {
+    async function fetchTodos() {
+      try {
+        const todoData = await API.graphql(graphqlOperation(listTodos));
+        setTodos(todoData.data.listTodos.items);
+      } catch (err) {
+        console.log('error: ', err);
+      }
+    }
+
     fetchTodos();
   }, []);
 
