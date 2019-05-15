@@ -12,8 +12,6 @@ We will take a look at how they are distinct from another.
 
 **Note:** This article assumes a basic understanding of Hooks. You should have read ["Hooks at a Glance."](https://reactjs.org/docs/hooks-overview.html).
 
-**Another note:** This article is the result of my deep dive into React Hooks. I attached the CodeSandBox I used to explore the two Hooks at the end of this article.
-
 ## Abstract
 
 The React docs say that [useCallback](https://reactjs.org/docs/hooks-reference.html#usecallback):
