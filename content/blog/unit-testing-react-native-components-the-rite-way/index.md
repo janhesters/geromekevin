@@ -4,6 +4,12 @@ date: '2019-04-26'
 description: Use a little helper function
 ---
 
+## RITEway-Jest
+
+If you want to use RITEway with React Native, check out [RITEway-Jest](https://github.com/janhesters/riteway-jest). This blog post is outdated and RITEway-Jest is the superior solution.
+
+---
+
 In the next minute, you are going to learn **how to use a RITEway inspired API in Jest unit tests for React Native.**
 
 ---
