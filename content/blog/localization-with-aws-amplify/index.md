@@ -53,6 +53,14 @@ import { strings } from './strings';
 I18n.putVocabularies(strings);
 ```
 
+Replace your `<p />` tag in `App.js` with the following.
+
+```jsx
+<p>
+  {I18n.get('appTitle1')} <code>src/App.js</code> {I18n.get('appTitle2')}
+</p>
+```
+
 If your browser is set to German, or if you added your native language and your browser is set to that, you should already see the translated `appTitle`. If not, you can set it yourself by using `I18n.setLanguage('de')`. If you are using AWS Amplify on mobile, it cannot automatically detect your language. You will have to use another library to recognize it and then set it manually.
 
 Let's take it a step further 👏🏻. What if you want to keep your strings where you use them? For example, I like to structure my projects by feature.
