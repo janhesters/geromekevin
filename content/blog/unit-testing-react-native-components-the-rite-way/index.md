@@ -1,7 +1,7 @@
 ---
 title: Unit Testing React Native Components the RITE Way
 date: '2019-04-26'
-description: Use a little helper function
+description: Use a little helper function.
 ---
 
 ## RITEway-Jest

@@ -1,7 +1,7 @@
 ---
 title: Localization with AWS Amplify
 date: '2019-05-28'
-description: Use Amplify's I18n module to translate your app
+description: Use Amplify's I18n module to translate your app.
 ---
 
 Translate your application dynamically in multiple languages with AWS Amplify's `I18n` module. This tutorial will teach you how to use Amplify's internationalization.
