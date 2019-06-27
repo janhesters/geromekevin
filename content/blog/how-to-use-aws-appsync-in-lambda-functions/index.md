@@ -291,7 +291,7 @@ Make sure your Lambda function has the [correct permissions](https://docs.aws.am
 
 If your function has the correct permission, [it will automatically have access to the necessary environment variables](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/loading-node-credentials-lambda.html) such as `process.env.AWS_ACCESS_KEY_ID`, `process.env.AWS_SECRET_ACCESS_KEY` and `process.env.AWS_SESSION_TOKEN`.
 
-You will also need to add some dependencies to its `package.json`.
+You will also need to [add some dependencies](https://docs.aws.amazon.com/appsync/latest/devguide/building-a-client-app-node.html) to its `package.json`.
 
 ```json
 "dependencies": {
