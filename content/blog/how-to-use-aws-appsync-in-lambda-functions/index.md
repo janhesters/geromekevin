@@ -311,6 +311,12 @@ You will also need to [add some dependencies](https://docs.aws.amazon.com/appsyn
 },
 ```
 
+Or use `npm`.
+
+```bash
+npm install --save apollo-cache-inmemory apollo-client apollo-link apollo-link-http aws-appsync aws-sdk aws-sdk es6-promise graphql graphql-tag isomorphic-fetch
+```
+
 Remember to run `npm install` from the function's `src` directory if you want to test it locally. Furthermore, you need to create a file at `src/graphql.js` which contains the query.
 
 ```js

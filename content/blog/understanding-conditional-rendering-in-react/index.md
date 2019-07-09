@@ -211,6 +211,8 @@ foo.hasOwnProperty('name'); // true
 bar.hasOwnProperty('name'); // false
 ```
 
+If you liked this article you might also like ["useCallback vs. useMemo"](https://geromekevin.com/usecallback-vs-usememo/) where we explore the differences between the two Hooks or the more beginner friendly post: ["Understanding arrow functions."](https://geromekevin.com/understanding-arrow-functions)
+
 ## Summary
 
 We explained how `||` and `&&` work, that they select their operands and the pitfalls you might encounter when using them. We also looked at how you can use them for conditional rendering in React and for conditionally assigning keys to objects.
