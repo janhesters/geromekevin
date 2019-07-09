@@ -153,7 +153,7 @@ const decr = sum(-1);
 
 inc(3); // 4 because inc remembers a as 1
 inc(6); // 7
-decr(3); // 2 because derc remembers a as -1
+decr(3); // 2 because decr remembers a as -1
 ```
 
 `add` is a function that takes in `a` and returns a function that takes in `b` that returns the sum of `a` and `b`. The function that takes in `b` remembers `a` in its closure.
