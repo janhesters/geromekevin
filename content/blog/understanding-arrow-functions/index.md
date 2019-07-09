@@ -4,7 +4,7 @@ date: '2019-07-09'
 description: Implicitly returning function expressions without this.
 ---
 
-In this tutorial you are going to learn the answers to the questions: "What is an arrow function in JavaScript?" and "How is an arrow function different to a regular (function keyword)?"
+In this tutorial you are going to learn the answers to the questions: "What is an arrow function in JavaScript?" and "How is an arrow function different to a regular function (keyword)?"
 
 ---
 
