@@ -2,6 +2,7 @@
 title: How to Add a Badge to Icons in React Native
 date: '2018-12-07'
 description: A higher-order component will do the job.
+tags: ['react', 'react-native', 'badge', 'higher-order components']
 ---
 
 In this article, you are going to learn how to **add badges to components in React Native** for both iOS and Android in your app. You’ll see an easy example of **using Higher-Order Components.**

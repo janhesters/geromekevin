@@ -2,6 +2,7 @@
 title: Query More Items Using Scans in AWS Amplify
 date: '2019-06-18'
 description: Use custom resolvers to create a Scan operation.
+tags: ['amplify', 'api', 'graphql']
 ---
 
 Is the [1000 item limit in AWS Amplify](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html#limits_appsync) hindering you from building your application? In this tutorial, you are going to learn how to use DynamoDB's Scan operation to query all items from a given table.

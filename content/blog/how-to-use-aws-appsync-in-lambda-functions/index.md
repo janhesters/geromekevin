@@ -2,6 +2,16 @@
 title: How To Use AWS AppSync in Lambda Functions
 date: '2019-06-26'
 description: Execute queries and mutations by using the correct execution policy and polyfills.
+tags:
+  [
+    'amplify',
+    'appsync',
+    'api',
+    'graphql',
+    'appsync',
+    'lambda',
+    'express',
+  ]
 ---
 
 In this tutorial, you are going to learn how you can execute queries and mutations in a Lambda function on an AppSync GraphQL API. We are going to use the Amplify framework to generate our code, but the solutions here work whether you use Amplify, or Serverless or something else.

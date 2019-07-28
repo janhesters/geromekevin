@@ -2,6 +2,7 @@
 title: useCallback vs useMemo
 date: '2019-05-14'
 description: useCallback is for functions and useMemo is for results.
+tags: ['hooks', 'react', 'useCallback', 'useMemo']
 ---
 
 What is the difference between `useCallBack` and `useMemo`? And why do `useMemo` and `useCallback` expect a function? If you've worked with React Hooks, you might have asked yourself these questions.

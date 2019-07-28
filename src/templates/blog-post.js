@@ -1,22 +1,24 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
+import React from 'react';
+import { Link, graphql } from 'gatsby';
+import kebabCase from 'lodash/kebabCase';
 
-import Bio from "../components/Bio"
-import Layout from "../components/Layout"
-import SEO from "../components/Seo"
-import SignUp from "../components/SignUp"
-import { rhythm, scale } from "../utils/typography"
-import { primaryColor } from "../style"
-import { formatReadingTime } from "../utils/helpers"
+import Bio from '../components/Bio';
+import Layout from '../components/Layout';
+import SEO from '../components/Seo';
+import SignUp from '../components/SignUp';
+import { rhythm, scale } from '../utils/typography';
+import { primaryColor } from '../style';
+import { formatReadingTime } from '../utils/helpers';
 
 const systemFont = `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-    "Droid Sans", "Helvetica Neue", sans-serif`
+    "Droid Sans", "Helvetica Neue", sans-serif`;
 class BlogPostTemplate extends React.Component {
   render() {
-    const post = this.props.data.markdownRemark
-    const siteTitle = this.props.data.site.siteMetadata.title
-    const { previous, next } = this.props.pageContext
+    const post = this.props.data.markdownRemark;
+    const siteTitle = this.props.data.site.siteMetadata.title;
+    const { previous, next } = this.props.pageContext;
+    const tags = post.frontmatter.tags || [];
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -33,13 +35,32 @@ class BlogPostTemplate extends React.Component {
                 style={{
                   ...scale(-1 / 5),
                   display: `block`,
-                  marginBottom: rhythm(1),
+                  marginBottom: 0,
                   marginTop: rhythm(-4 / 5),
                 }}
               >
                 {post.frontmatter.date}
                 {` • ${formatReadingTime(post.timeToRead)}`}
               </p>
+              {
+                <ul
+                  style={{
+                    display: `flex`,
+                    flexWrap: `wrap`,
+                    justifyContent: `flex-start`,
+                    listStyle: `none`,
+                    padding: 0,
+                    marginLeft: 0,
+                  }}
+                >
+                  {tags.sort().map((tag, index) => (
+                    <li key={tag} style={{ marginBottom: 0 }}>
+                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                      {index === tags.length - 1 ? '' : ',\xa0'}
+                    </li>
+                  ))}
+                </ul>
+              }
             </header>
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
           </article>
@@ -47,7 +68,7 @@ class BlogPostTemplate extends React.Component {
         <footer>
           <div
             style={{
-              margin: "90px 0 40px 0",
+              margin: '90px 0 40px 0',
               fontFamily: systemFont,
             }}
           >
@@ -55,17 +76,17 @@ class BlogPostTemplate extends React.Component {
           </div>
           <h3
             style={{
-              fontFamily: "Montserrat, sans-serif",
+              fontFamily: 'Montserrat, sans-serif',
               marginTop: rhythm(0.25),
             }}
           >
             <Link
               style={{
-                boxShadow: "none",
-                textDecoration: "none",
+                boxShadow: 'none',
+                textDecoration: 'none',
                 color: primaryColor,
               }}
-              to={"/"}
+              to={'/'}
             >
               Geromekevin
             </Link>
@@ -99,11 +120,11 @@ class BlogPostTemplate extends React.Component {
           </nav>
         </footer>
       </Layout>
-    )
+    );
   }
 }
 
-export default BlogPostTemplate
+export default BlogPostTemplate;
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
@@ -122,10 +143,11 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        tags
       }
       fields {
         slug
       }
     }
   }
-`
+`;

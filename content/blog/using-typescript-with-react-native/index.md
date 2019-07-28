@@ -2,6 +2,7 @@
 title: Using TypeScript With React Native
 date: '2019-01-18'
 description: React Native with TypeScript, linting and Enzyme or React Native Testing Library.
+tags: ['react-native', 'typescript', 'beginner']
 ---
 
 In this tutorial, you are going to learn **how to set up a React Native project with TypeScript.**

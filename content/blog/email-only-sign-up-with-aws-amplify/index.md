@@ -2,6 +2,7 @@
 title: Email Only Sign Up With AWS Amplify
 date: '2019-03-14'
 description: You can change the username attributes manually.
+tags: ['amplify']
 ---
 
 In this post **you are going to learn how to add email authentication to your Amplify app** without requiring an username.

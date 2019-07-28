@@ -2,6 +2,7 @@
 title: TypeScript HOC (Higher-Order Component) and Decorators in React
 date: '2018-12-14'
 description: You need to get the types right.
+tags: ['react', 'react-native', 'typescript' 'higher-order components', 'badge']
 ---
 
 You are going to **learn how to build a HOC for React using TypeScript.** We are going to develop a Higher-Order Component that adds a badge to other components. We are also going to **use them as decorators.** Even though the example is for React Native, the same principles apply for all React HOCs in general.

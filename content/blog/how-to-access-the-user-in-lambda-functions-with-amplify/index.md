@@ -2,6 +2,7 @@
 title: How to Access the User in Lambda Functions (with Amplify)
 date: '2019-07-16'
 description: Use a regex with custom middleware.
+tags: ['lambda', 'amplify', 'express', 'cognito']
 ---
 
 In this tutorial, you are going to learn how to get the user who calls the AWS Lambda function. We are going to use function composition for Express middleware to pass the user to all requests.

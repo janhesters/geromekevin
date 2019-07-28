@@ -2,6 +2,7 @@
 title: Understanding Conditional Rendering in React
 date: '2019-07-02'
 description: You need to understand the selector operators.
+tags: ['conditional rendering', 'react', 'operand selector operators']
 ---
 
 `||` and `&&` (often) don't return booleans. They behave differently than you might think. Do you use them for conditional rendering in React? In this article, you are going to learn what's going on.

@@ -2,6 +2,7 @@
 title: Creating GraphQL Batch Operations for AWS Amplify
 date: '2019-03-22'
 description: Use custom resolvers for bulk procedures.
+tags: ['graphql', 'amplify', 'appsync']
 ---
 
 In this article, you are going to learn **how to create bulk queries and mutations** that require authentication in Cognito for an AWS Amplify project using the AppSync API.

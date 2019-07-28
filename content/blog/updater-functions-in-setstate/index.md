@@ -2,6 +2,7 @@
 title: Updater Functions in React's setState
 date: '2019-04-05'
 description: Once you learn this, you'll understand setState better.
+tags: ['setState', 'react']
 ---
 
 I recently learned a little nugget about **how functions in `setState` work**.

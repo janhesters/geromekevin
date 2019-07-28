@@ -2,6 +2,7 @@
 title: Sorting Queries with AWS Amplify's Key Directive
 date: '2019-06-11'
 description: Sort GraphQL queries with custom index structures.
+tags: ['amplify', 'api', 'graphql', '@key', 'dynamodb', 'appsync']
 ---
 
 In this tutorial, you are going to learn how to sort your GraphQL queries in AWS Amplify using the `@key` directive.

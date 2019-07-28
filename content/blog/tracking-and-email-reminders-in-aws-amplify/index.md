@@ -2,6 +2,7 @@
 title: Tracking and Reminders in AWS Amplify
 date: '2019-05-21'
 description: Understand with Analytics and engage with AWS Pinpoint.
+tags: ['amplify', 'analytics', 'pinpoint', 'tracking']
 ---
 
 **Track which features your users use** in AWS Amplify and send them emails, push-notifications and SMS based on their behavior.
