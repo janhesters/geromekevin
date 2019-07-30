@@ -149,8 +149,8 @@ Implicit returns become especially handy for [currying](https://en.wikipedia.org
 ```js
 const add = a => b => a + b; // add is a function that returns b => a + b
 // Read this as const add = a => (b => a + b);
-const inc = sum(1); // inc is a function because b => a + b got returned
-const decr = sum(-1);
+const inc = add(1); // inc is a function because b => a + b got returned
+const decr = add(-1);
 
 inc(3); // 4 because inc remembers a as 1
 inc(6); // 7
