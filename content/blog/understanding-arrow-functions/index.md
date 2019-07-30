@@ -109,7 +109,7 @@ const car = {
 };
 
 car.yellWheels(); // 'FOUR'
-car.sayWheels(); // undefined
+car.countWheels(); // undefined
 ```
 
 Using the `function` keyword, `this` references the object. However, the arrow function doesn't get its own `this`. Therefore `wheels` is undefined because the global object doesn't have a property `wheels`.
