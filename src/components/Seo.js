@@ -1,7 +1,7 @@
-import React from "react"
-import PropTypes from "prop-types"
-import Helmet from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+import { useStaticQuery, graphql } from 'gatsby';
 
 function SEO({ description, lang, meta, keywords, slug, title, image }) {
   const { site } = useStaticQuery(
@@ -20,13 +20,13 @@ function SEO({ description, lang, meta, keywords, slug, title, image }) {
         }
       }
     `
-  )
+  );
 
-  const metaDescription = description || site.siteMetadata.description
+  const metaDescription = description || site.siteMetadata.description;
   const metaImage = image
     ? `${site.siteMetadata.siteUrl}/${image}`
-    : null
-  const url = `${site.siteMetadata.siteUrl}${slug}`
+    : null;
+  const url = `${site.siteMetadata.siteUrl}${slug}`;
 
   return (
     <Helmet
@@ -41,7 +41,7 @@ function SEO({ description, lang, meta, keywords, slug, title, image }) {
           content: metaDescription,
         },
         {
-          property: "og:url",
+          property: 'og:url',
           content: url,
         },
         {
@@ -85,11 +85,11 @@ function SEO({ description, lang, meta, keywords, slug, title, image }) {
           metaImage
             ? [
                 {
-                  property: "og:image",
+                  property: 'og:image',
                   content: metaImage,
                 },
                 {
-                  name: "twitter:image",
+                  name: 'twitter:image',
                   content: metaImage,
                 },
               ]
@@ -97,30 +97,36 @@ function SEO({ description, lang, meta, keywords, slug, title, image }) {
         )
         .concat(meta)}
     />
-  )
+  );
 }
 
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
   keywords: [
-    "blog",
-    "geromekevin",
-    "react",
-    "jan",
-    "hesters",
-    "article",
-    "how to",
-    "happy body",
-    "javascript",
-    "tutorial",
-    "typescript",
-    "react-native",
-    "persuasion",
+    'amplify',
+    'aws',
+    'tutorial',
+    'blog',
+    'geromekevin',
+    'react',
+    'jan',
+    'hesters',
+    'article',
+    'how to',
+    'happy body',
+    'javascript',
+    'typescript',
+    'react-native',
+    'lambda',
+    'appsync',
+    'cognito',
+    'dynamodb',
+    'persuasion',
   ],
   description: ``,
   slug: ``,
-}
+};
 
 SEO.propTypes = {
   description: PropTypes.string,
@@ -128,6 +134,6 @@ SEO.propTypes = {
   meta: PropTypes.arrayOf(PropTypes.object),
   keywords: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.string.isRequired,
-}
+};
 
-export default SEO
+export default SEO;
