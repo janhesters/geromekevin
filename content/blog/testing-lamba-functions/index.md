@@ -52,7 +52,7 @@ var region = process.env.REGION
 No
 ```
 
-Consequently, add RITEway and Supertest alongside [tap-color](https://www.npmjs.com/package/tap-color). The ladder is for formatting our test input so that it looks pretty.
+Consequently, add RITEway and Supertest alongside [tap-color](https://www.npmjs.com/package/tap-color). The ladder is for formatting our test output so that it looks pretty.
 
 ```bash
 cd amplify/backend/function/lambdaTest/src/ && npm install --save-dev riteway tap-color supertest && npm i
