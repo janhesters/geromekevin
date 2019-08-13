@@ -213,4 +213,4 @@ The code is pretty self-explanatory. `asyncForEach` avoids race conditions. `ran
 
 Run the app, and after you see `"Done creating. Reload your app."` reload it. Your counter should now be at 1001. If it is you just did a query for more than a thousand entities 👏🏻. Good job! If you followed this tutorial, you can clear everything up by running `amplify delete`.
 
-If you liked this article, you might also enjoy ["Creating GraphQL Batch Operations for AWS Amplify"](https://geromekevin.com/creating-graphql-batch-operations-for-aws-amplify/) because we also use custom resolvers in it.
+If you liked this article, you might also enjoy ["Creating GraphQL Batch Operations for AWS Amplify"](https://janhesters.com/creating-graphql-batch-operations-for-aws-amplify/) because we also use custom resolvers in it.

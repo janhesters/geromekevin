@@ -508,7 +508,7 @@ Take a look at the result 👀.
 
 Looking good 👌🏻
 
-If you are up for a challenge, you might like ["TypeScript HOC and Decorators in React"](https://geromekevin.com/typescript-hoc-and-decorators-in-react) where we take an advanced look at HOCs and decorators using TypeScript.
+If you are up for a challenge, you might like ["TypeScript HOC and Decorators in React"](https://janhesters.com/typescript-hoc-and-decorators-in-react) where we take an advanced look at HOCs and decorators using TypeScript.
 
 ## Footnotes
 

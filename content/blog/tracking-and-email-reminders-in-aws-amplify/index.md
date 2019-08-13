@@ -166,7 +166,7 @@ import Analytics from '@aws-amplify/analytics';
 
 Analytics.record({
   name: 'videoView',
-  attributes: { content: 'gaming', creator: 'Geromekevin' },
+  attributes: { content: 'gaming', creator: 'janhesters' },
   metrics: { minutesWatched: 14 },
 });
 ```

@@ -13,7 +13,7 @@ function Tags({ pageContext, data, location }) {
   const siteTitle = data.site.siteMetadata.title;
   const tagHeader = `${totalCount} post${
     totalCount === 1 ? '' : 's'
-  } tagged with "${tag}"`;
+    } tagged with "${tag}"`;
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -39,7 +39,7 @@ function Tags({ pageContext, data, location }) {
             }}
             to={'/'}
           >
-            Geromekevin
+            Jan Hesters
           </Link>
         </h3>
         <Bio />

@@ -16,7 +16,7 @@ You are going to **learn how to build a HOC for React using TypeScript.** We are
 
 ---
 
-**Note:** This post is targeted at intermediates and a follow up of my beginner-friendly post ["How To Add a Badge to Icons in React Native"](https://geromekevin.com/how-to-add-a-badge-to-icons-in-react-native), where you can learn about HOCs in regular JavaScript.
+**Note:** This post is targeted at intermediates and a follow up of my beginner-friendly post ["How To Add a Badge to Icons in React Native"](https://janhesters.com/how-to-add-a-badge-to-icons-in-react-native), where you can learn about HOCs in regular JavaScript.
 
 ---
 
@@ -24,7 +24,7 @@ When I created my first [Higher-Order Component](https://reactjs.org/docs/higher
 
 ### 1. The Example
 
-As an example, I'm going to use an icon in a tab bar. If you want to see other use cases, check out [my previous article](https://geromekevin.com/how-to-add-a-badge-to-icons-in-react-native).
+As an example, I'm going to use an icon in a tab bar. If you want to see other use cases, check out [my previous article](https://janhesters.com/how-to-add-a-badge-to-icons-in-react-native).
 
 The end result is going to look like this 😍:
 
@@ -34,7 +34,7 @@ The end result is going to look like this 😍:
 
 ### 2. Setting Up the App
 
-First, we need to create an app with TypeScript. Follow the instructions [here](https://geromekevin.com/using-typescript-with-react-native)¹, but leave out the testing setup.
+First, we need to create an app with TypeScript. Follow the instructions [here](https://janhesters.com/using-typescript-with-react-native)¹, but leave out the testing setup.
 
 We need to add three packages: React Navigation (V2)², React Native Elements (preferably V1, but since it's not out as of the writing of this post, we will use the next branch), and React Native Vector Icons. Remember to link the icons.
 
@@ -370,4 +370,4 @@ Enjoy your experimental features 🚀.
 
 1. If you like the guide to create a TypeScript app that I linked, please up-vote [this PR](https://github.com/facebook/react-native-website/pull/705), because you can help to get it posted on React Native PR. It will make following the steps to create a new RN app with TypeScript a easy.
 2. As of writing of this post version three does not have types, yet.
-3. If you use `void` as a return type you can't use it in the classic way. The API is just broken right now, since it's still and experimental feature. If I'm wrong with this assumption, please react out to me on [Twitter](https://twitter.com/geromekevin) and correct me.
+3. If you use `void` as a return type you can't use it in the classic way. The API is just broken right now, since it's still and experimental feature. If I'm wrong with this assumption, please react out to me on [Twitter](https://twitter.com/janhesters) and correct me.

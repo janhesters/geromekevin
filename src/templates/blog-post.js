@@ -88,7 +88,7 @@ class BlogPostTemplate extends React.Component {
               }}
               to={'/'}
             >
-              Geromekevin
+              Jan Hesters
             </Link>
           </h3>
           <Bio />

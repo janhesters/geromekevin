@@ -159,7 +159,7 @@ decr(3); // 2 because decr remembers a as -1
 
 `add` is a function that takes in `a` and returns a function that takes in `b` that returns the sum of `a` and `b`. The function that takes in `b` remembers `a` in its closure.
 
-If you liked this article, you might also like ["Understanding Conditional Rendering in React"](https://geromekevin.com/understanding-conditional-rendering-in-react/) because we explore `||` and `&&` in it in-depth.
+If you liked this article, you might also like ["Understanding Conditional Rendering in React"](https://janhesters.com/understanding-conditional-rendering-in-react/) because we explore `||` and `&&` in it in-depth.
 
 ## Summary
 

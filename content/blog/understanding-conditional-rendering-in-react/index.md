@@ -212,7 +212,7 @@ foo.hasOwnProperty('name'); // true
 bar.hasOwnProperty('name'); // false
 ```
 
-If you liked this article you might also like ["useCallback vs. useMemo"](https://geromekevin.com/usecallback-vs-usememo/) where we explore the differences between the two Hooks or the more beginner friendly post: ["Understanding arrow functions."](https://geromekevin.com/understanding-arrow-functions)
+If you liked this article you might also like ["useCallback vs. useMemo"](https://janhesters.com/usecallback-vs-usememo/) where we explore the differences between the two Hooks or the more beginner friendly post: ["Understanding arrow functions."](https://janhesters.com/understanding-arrow-functions)
 
 ## Summary
 

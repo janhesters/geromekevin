@@ -60,7 +60,7 @@ As you can probably tell, `Promise.all` can lead to race conditions and other pr
 
 It turns out **[since February](https://aws.amazon.com/blogs/mobile/amplify-adds-support-for-multiple-environments-custom-resolvers-larger-data-models-and-iam-roles-including-mfa/) you can write custom resolvers in AWS Amplify**, which enables you to write your own batch actions for the AppSync API. If you aren't familiar with writing resolvers: _I'm neither_. You will get a sufficient basic feeling for them once you read their code further below. In Germany, there is a saying "A good horse only jumps as high as it has to."
 
-We are going to **write a custom resolver for batch creations** with authentication. Having learned that, you should be able to do batch queries and updates on your own (e.g. leaving out authentication is strictly less code). If you have any questions, you can always hit me up on Twitter via [@Geromekevin](https://twitter.com/geromekevin). (You might want to say "Hi" regardless.)
+We are going to **write a custom resolver for batch creations** with authentication. Having learned that, you should be able to do batch queries and updates on your own (e.g. leaving out authentication is strictly less code). If you have any questions, you can always hit me up on Twitter via [@janhesters](https://twitter.com/janhesters). (You might want to say "Hi" regardless.)
 
 Let's code up an example using React 👏🏻!
 

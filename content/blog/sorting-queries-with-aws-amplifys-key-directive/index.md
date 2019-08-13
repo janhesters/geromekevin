@@ -395,7 +395,7 @@ export default createAppContainer(
 );
 ```
 
-This code is pretty straightforward. First, we configure Amplify. Afterwards, we log us in with the user that we created in a [`useEffect` Hook](https://geromekevin.com/usecallback-vs-usememo/). Next, we use `useState` to save the fetched contacts, the queries `nextToken` and a `loading` boolean that indicates whether a GraphQL request is happening. `fetchContacts` sets the `loading` boolean to true while fetching. And it loads the contacts using the `contactsByOwner` query after getting the owner's id. The `buttonProps` object gets a title depending on the `nextToken` and the contacts fetched, and disables the button if there are no more contacts. Lastly, we map over the contacts and render them in a `ListItem` along with a `Button`, which calls `fetchContacts` when pressed. We also wrap everything in a stack navigator to get a proper header.
+This code is pretty straightforward. First, we configure Amplify. Afterwards, we log us in with the user that we created in a [`useEffect` Hook](https://janhesters.com/usecallback-vs-usememo/). Next, we use `useState` to save the fetched contacts, the queries `nextToken` and a `loading` boolean that indicates whether a GraphQL request is happening. `fetchContacts` sets the `loading` boolean to true while fetching. And it loads the contacts using the `contactsByOwner` query after getting the owner's id. The `buttonProps` object gets a title depending on the `nextToken` and the contacts fetched, and disables the button if there are no more contacts. Lastly, we map over the contacts and render them in a `ListItem` along with a `Button`, which calls `fetchContacts` when pressed. We also wrap everything in a stack navigator to get a proper header.
 
 Here is how the app looks.
 
@@ -403,7 +403,7 @@ Here is how the app looks.
 
 That's how easy sorting with the `@key` directive is.
 
-If you liked this article you might also like ["Tracking and Reminders in AWS Amplify"](https://geromekevin.com/tracking-and-email-reminders-in-aws-amplify/) in which we set up tracking in an AWS Amplify app.
+If you liked this article you might also like ["Tracking and Reminders in AWS Amplify"](https://janhesters.com/tracking-and-email-reminders-in-aws-amplify/) in which we set up tracking in an AWS Amplify app.
 
 ## Summary
 

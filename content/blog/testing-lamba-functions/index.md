@@ -26,7 +26,7 @@ I saw Lambda functions without tests and spaghetti code. In fact, I'm guilty of 
 
 You are going to learn the techniques I use to test and simplify Lambda functions. Simplifying means to isolate your program logic into separate, functional units, which makes it more composable and testable. We are going to use [RITEway](https://github.com/ericelliott/riteway) for unit tests, [Supertest](https://github.com/visionmedia/supertest) for integration tests and [AWS Amplify](https://aws-amplify.github.io/docs/js/start) to generate our Lambda functions.
 
-Why these three tools? RITEway has a genius API that forces your tests to answer [the five questions every unit test must answer](https://medium.com/javascript-scene/what-every-unit-test-needs-f6cd34d9836d). Supertest makes HTTP assertions in Node.js easy. And if you read this article, I won't have to tell you how amazing Amplify is to manage AWS resources. Just [check out the other articles of my blog](https://geromekevin.com).
+Why these three tools? RITEway has a genius API that forces your tests to answer [the five questions every unit test must answer](https://medium.com/javascript-scene/what-every-unit-test-needs-f6cd34d9836d). Supertest makes HTTP assertions in Node.js easy. And if you read this article, I won't have to tell you how amazing Amplify is to manage AWS resources. Just [check out the other articles of my blog](https://janhesters.com).
 
 ## Unit Tests
 
@@ -66,7 +66,7 @@ Make sure to add a testing script to your `package.json`.
 
 We will need some functional programming helpers to compose our code. Either install a functional library like [Ramda](https://ramdajs.com/) or create a file `src/fp/index.js` and add the following functions.
 
-**Note:** If the following functions scare you, level up by reading ["Professor Frisby's Mostly Adequate Guide to Functional Programming"](https://mostly-adequate.gitbooks.io/mostly-adequate-guide/). I also explain the basics of currying in ["Understanding Arrow Functions"](https://geromekevin.com/understanding-arrow-functions/). Nevertheless, for the sake of this tutorial, it's okay if you don't get all of this article's code. Understanding the techniques is more important than the actual implementation.
+**Note:** If the following functions scare you, level up by reading ["Professor Frisby's Mostly Adequate Guide to Functional Programming"](https://mostly-adequate.gitbooks.io/mostly-adequate-guide/). I also explain the basics of currying in ["Understanding Arrow Functions"](https://janhesters.com/understanding-arrow-functions/). Nevertheless, for the sake of this tutorial, it's okay if you don't get all of this article's code. Understanding the techniques is more important than the actual implementation.
 
 ```js
 const asyncPipe = (...fns) => x =>
@@ -123,7 +123,7 @@ const applyMiddleware = (route, ...middleware) =>
 module.exports = { applyMiddleware };
 ```
 
-**Note:** If you want to learn how you can functionally write your own custom middleware, you might want to read last weeks article ["How to Access the User in Lambda Functions (with Amplify)"](https://geromekevin.com/how-to-access-the-user-in-lambda-functions-with-amplify/).
+**Note:** If you want to learn how you can functionally write your own custom middleware, you might want to read last weeks article ["How to Access the User in Lambda Functions (with Amplify)"](https://janhesters.com/how-to-access-the-user-in-lambda-functions-with-amplify/).
 
 Using our test frameworks, we want to write some unit tests in `src/routes/routes.test.js`. We will write one for our `"/items"` GET route and one for the listener that logs out on which port the server is running on.
 
@@ -483,7 +483,7 @@ ok 4 Given a function, and two arguments (request and response): should lift the
 
 Our integration tests and unit tests pass now! 🚀
 
-If you liked this article, you might also like ["How To Use AWS AppSync in Lambda Functions"](https://geromekevin.com/how-to-use-aws-appsync-in-lambda-functions/) because you are going to learn how to connect your Lambda functions to your AppSync API, making it more powerful.
+If you liked this article, you might also like ["How To Use AWS AppSync in Lambda Functions"](https://janhesters.com/how-to-use-aws-appsync-in-lambda-functions/) because you are going to learn how to connect your Lambda functions to your AppSync API, making it more powerful.
 
 ## Summary
 

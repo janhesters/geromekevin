@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Geromekevin`,
+    title: `Jan Hesters`,
     author: `Jan Hesters`,
     description: `Personal blog by Jan Hesters. Ask better questions.`,
-    siteUrl: `https://geromekevin.com/`,
+    siteUrl: `https://janhesters.com/`,
     social: {
-      twitter: `@geromekevin`,
+      twitter: `@janhesters`,
     },
   },
   plugins: [
@@ -58,7 +58,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `A Blog by Jan Hesters`,
-        short_name: `Geromekevin`,
+        short_name: `janhesters`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#82AAFF`,

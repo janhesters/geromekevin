@@ -1,5 +1,5 @@
 {
-  "name": "geromekevin",
+  "name": "janhesters",
   "private": true,
   "description": "Personal blog by Jan Hesters. Ask better questions.",
   "version": "0.1.0",
@@ -40,7 +40,7 @@
   "devDependencies": {
     "prettier": "^1.16.4"
   },
-  "homepage": "https://geromekevin.com",
+  "homepage": "https://janhesters.com",
   "keywords": [
     "gatsby",
     "geromekevin",
