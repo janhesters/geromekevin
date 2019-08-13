@@ -46,7 +46,7 @@ Imagine `env-two/` being on your co-worker's computer. Here we'll use the two ap
 
 ### 1. a) You
 
-Initialize amplify in your first environment and add authentication. **Note:** In some of these code examples, there will be _several CLI commands_ that you have to run. Remember to **_double-check that you catch all_** and don't miss any.
+Initialize Amplify in your first environment and add authentication. **Note:** In some of these code examples, there will be _several CLI commands_ that you have to run. Remember to **_double-check that you catch all_** and don't miss any.
 
 ```bash
 # highlight-start
