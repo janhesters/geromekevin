@@ -436,7 +436,7 @@ Since we added these scripts to the `preBuild` `commands` section, they will run
 
 That's it! 🚀 You can now deploy your projects with confidence.
 
-If you liked this tutorial, you might want to read about ["Multiple Environments with AWS Amplify"](https://janhesters.com/multiple-environments-with-aws-amplify/) because effectively collaborating in teams is an essentiell skill.
+If you liked this tutorial, you might want to read about ["Multiple Environments with AWS Amplify"](https://janhesters.com/multiple-environments-with-aws-amplify/) because effectively collaborating in teams is an essential skill.
 
 ### Summary
 
