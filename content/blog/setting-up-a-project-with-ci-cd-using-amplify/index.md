@@ -28,7 +28,7 @@ To **decrease your deployment risk**, you need to **increase your deployment fre
 
 You can frequently deploy by using CI/CD, which stands for _continuous integration and continuous deployment_. It is the practice of automating your tests and your static analysis to ensure your code works and is properly formatted. Therefore, **CI/CD depends on good test coverage**.
 
-In this article, **you will see an example using static analysis** with ESLint and Prettier, **unit tests** with RITEway, **and functional tests** with TestCafe. You will learn how to set up your project with these tools and how to automate them. Lastly, we will **host the app using the Amplify console, which will run our tests before each deployment for us.**
+In this article, **you will see an example using static analysis** with ESLint and Prettier, **unit tests** with RITEway, [**and functional tests** with TestCafe](https://janhesters.com/e2e-testing-amplify-apps/). You will learn how to set up your project with these tools and how to automate them. Lastly, we will **host the app using the Amplify console, which will run our tests before each deployment for us.**
 
 ## Static Analysis
 
