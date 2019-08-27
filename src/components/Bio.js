@@ -11,35 +11,41 @@ function Bio() {
       render={data => {
         const { author, social } = data.site.siteMetadata
         return (
-          <div
-            style={{
-              display: `flex`,
-              marginBottom: rhythm(2),
-            }}
-          >
-            <Image
-              fixed={data.avatar.childImageSharp.fixed}
-              alt={author}
+          <div style={{
+            marginBottom: rhythm(2),
+          }}>
+            <div
               style={{
-                marginRight: rhythm(1 / 2),
-                marginBottom: 0,
-                width: rhythm(2),
-                height: rhythm(2),
-                borderRadius: `100%`,
+                display: `flex`,
               }}
-              imgStyle={{
-                borderRadius: `50%`,
-              }}
-            />
-            <p>
-              Personal blog by{" "}
-              <a href={`https://twitter.com/${social.twitter}`}>
-                Jan Hesters
-              </a>
-              .
-              <br />
-              Ask better questions.
-            </p>
+            >
+              <Image
+                fixed={data.avatar.childImageSharp.fixed}
+                alt={author}
+                style={{
+                  marginRight: rhythm(1 / 2),
+                  marginBottom: 0,
+                  width: rhythm(2),
+                  height: rhythm(2),
+                  borderRadius: `100%`,
+                }}
+                imgStyle={{
+                  borderRadius: `50%`,
+                }}
+              />
+              <p>
+                Personal blog by{" "}
+                <a href={`https://twitter.com/${social.twitter}`}>
+                  Jan Hesters
+                </a>
+                .
+                <br />
+                Ask better questions.
+              </p>
+            </div>
+            <p>Interested in JavaScript, React or Amplify consulting for your team, or mentoring for yourself? Have another opportunity for me? <a href="https://twitter.com/janhesters">
+              My DMs are open.
+            </a></p>
           </div>
         )
       }}
