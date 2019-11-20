@@ -66,7 +66,7 @@ React projects which are set up with CRA come with an [ESLint configuration](htt
 Add a `"lint"` script to your `package.json`.
 
 ```json
-"lint": "eslint --ignore-path .gitignore .",
+"lint": "echo 'Linting...' && eslint --ignore-path .gitignore . && echo 'Lint complete.'",
 ```
 
 Using the `--ignore-path` flag, we can re-use our `.gitignore` to make sure we only lint files that we wrote.
@@ -119,7 +119,7 @@ Prettier's settings are configured using a file called `.prettierrc`.
 Add a `"format"` script that fixes your code.
 
 ```json
-"format": "yarn --silent lint --fix && echo 'Lint complete.'",
+"format": "yarn --silent lint --fix",
 ```
 
 If ESLint finds zero errors, it prints out nothing. We add `echo 'Lint complete.'` to verify that our lint script ran. `--silent` (or `-s`) suppresses some unnecessary output of the commands and keeps your console clean. Note that for NPM you have to pass on flags like `--fix` using an extra `--`.
