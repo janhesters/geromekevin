@@ -43,9 +43,7 @@ function Bio() {
                 Ask better questions.
               </p>
             </div>
-            <p>Interested in JavaScript, React or Amplify consulting for your team, or mentoring for yourself? Have another opportunity for me? <a href="https://twitter.com/janhesters">
-              My DMs are open.
-            </a></p>
+            <p>Want to contact me? Send me an email <a href="mailto:jan.hesters@coderemail.com?subject=JavaScript&body=Hi Jan,"></a></p>
           </div>
         )
       }}
