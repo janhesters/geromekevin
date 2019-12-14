@@ -43,7 +43,7 @@ function Bio() {
                 Ask better questions.
               </p>
             </div>
-            <p>Want to contact me? Send me an email <a href="mailto:jan.hesters@coderemail.com?subject=JavaScript&body=Hi Jan,"></a>.</p>
+            <p>Want to contact me? <a href="mailto:jan.hesters@coderemail.com?subject=JavaScript&body=Hi Jan,">Send me an email</a>.</p>
           </div>
         )
       }}
