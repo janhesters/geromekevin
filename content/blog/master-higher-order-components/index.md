@@ -103,7 +103,7 @@ import render from 'riteway/render-component.js';
 import myHOC from './my-hoc.js';
 
 function MyComponent({ title = 'Hello' }) {
-  return <p>{title}</p>;
+  return <p className="title">{title}</p>;
 }
 
 describe('myHOC', async assert => {
@@ -330,7 +330,7 @@ export default compose(
 
 ### HOC Composition
 
-In the example above we composed 4 different HOCs.
+In the example above we composed 3 different HOCs.
 
 1. `withRouter` is a HOC from React Router DOM. It injects the `history` object, which we can use to navigate to the password reset screen, when the user clicks the "Forgot Password" button.
 2. `connect` is a HOC from React Redux. We use it to connect our component to our Redux store. We inject the `loading` prop and the `signIn` action creator.
